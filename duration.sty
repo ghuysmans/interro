@@ -1,0 +1,12 @@
+\NeedsTeXFormat{LaTeX2e}[1994/06/01]
+\ProvidesPackage{duration}
+\RequirePackage[clock]{ifsym}
+
+\newcounter{duration}
+\newcommand{\duration}[1]{\addtocounter{duration}{#1}\StopWatchEnd\ #1 min.}
+
+\makeatletter
+\newcommand{\totalduration}{\the\c@duration}
+
+\makeatother
+\endinput

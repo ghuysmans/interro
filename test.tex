@@ -1,6 +1,8 @@
 \usepackage{amsmath}
 \usepackage{graphicx}
 \usepackage{url}
+\usepackage{duration}
+\usepackage{marginnote}
 \title{Interrogation}
 \targetcg{6}{ème}{Science-Informatique}
 \begin{document}
@@ -12,6 +14,7 @@ Expliquez avec vos mots le noeud du problème.
 \begin{solutionordottedlines}[2cm]
 lalala
 \end{solutionordottedlines}
+\marginpar{\duration{2}}
 
 \question[2]
 Complétez ces points :
@@ -19,6 +22,7 @@ Complétez ces points :
 \item A : \teacherorfill{premier}
 \item B : \teacherorfill{second}
 \end{itemize}
+\marginpar{\duration{3}}
 
 \question[1]
 Choisissez bien :
@@ -26,6 +30,7 @@ Choisissez bien :
 \choice oui
 \correctchoice non
 \end{oneparcheckboxes}
+\marginpar{\duration{1}}
 
 \question[1]
 Même chose, davantage de possibilités :
@@ -35,6 +40,9 @@ Même chose, davantage de possibilités :
 \choice trois
 \choice quatre
 \end{checkboxes}
+\marginpar{\duration{1}}
+
+\teacheronly{Au total, ça fait \totalduration{} minutes.}
 
 \end{questions}
 \end{document}
