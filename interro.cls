@@ -84,6 +84,7 @@
 \newcommand*{\NewCopy}{%
   \setcounter{page}{1}
   \stepcounter{copynum}
+  \setcounter{section}{0}
   \setcounter{question}{0}
   \setcounter{partno}{1}
   \setcounter{numquestions}{0}
